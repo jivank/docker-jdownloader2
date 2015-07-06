@@ -11,4 +11,4 @@ RUN mkdir /jdownloader && cd /jdownloader && wget http://installer.jdownloader.o
 RUN mkdir /data
 VOLUME /data
 
-CMD ["/usr/local/jd2/jre/java","-Djava.awt.headless=true","-jar","/usr/local/jd2/JDownloader.jar"]
+CMD ["/usr/local/jd2/jre/bin/java","-Djava.awt.headless=true","-jar","/usr/local/jd2/JDownloader.jar"]
