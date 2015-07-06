@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean
 
 RUN mkdir /jdownloader && cd /jdownloader && wget http://installer.jdownloader.org/JD2Setup_x64.sh && \
-	yes '' | bash JD2Setup_x64.sh
+	yes '' | bash JD2Setup_x64.sh && rm JD2Setup_x64.sh
 RUN mkdir /data
 VOLUME /data
 
